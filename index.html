@@ -9,15 +9,18 @@
 </head>
 
 <body>
+    <div class="container">
+        <h1>CoinClicker</h1>
+        <button onclick="btnCoin()" class="main-btn">Add +1 Coin</button>
+        <hr>
+        Total Coins: <span id="totalCoins">0</span><br>
+        Auto Clicker: <span id="totalAutoClicker">0</span><br>
+        Gold Diggers: <span id="totalDigger">0</span><br>
+        CoinsPerSecond: <span id="cps">0</span><br>
 
-    Total Coins: <span id="totalCoins">0</span><br>
-    Auto Clicker: <span id="totalAutoClicker">0</span><br>
-    Gold Diggers: <span id="totalDigger">0</span><br>
-    CoinsPerSecond: <span id="cps">0</span><br>
-    <button onclick="btnCoin()">Add +1 Coin</button>
-    <button onclick="btnAutoClicker()">Autoclicker - $<span id="clickerCost">10</span></button>
-    <button onclick="btnDigger()">Gold Digger - $<span id="diggerCost">20</span></button>
-
+        <button onclick="btnAutoClicker()">Autoclicker - $<span id="clickerCost">10</span></button>
+        <button onclick="btnDigger()">Gold Digger - $<span id="diggerCost">20</span></button>
+    </div>
 
     <script src="clicker-game.js"></script>
 </body>
