@@ -44,3 +44,12 @@ hr {
     width: 350px;
     height: 60px;
 }
+.upgrade {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid;
+    height: 50px;
+    padding: 10px;
+    background-color: crimson;
+}
