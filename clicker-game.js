@@ -63,9 +63,9 @@ function coinsPerSecond() {
     document.getElementById("cps").innerHTML = cps;
 }
 
-let achievement = {
-    name: "You Have Earned The Coin Master Achievement",
-    requirement: 20,
+const achievement = {
+    name: "Coin Master Achievement",
+    requirement: 25,
 };
 
 function checkAchievement() {
@@ -74,6 +74,7 @@ function checkAchievement() {
     if (coins >= achievement.requirement) {
         if (!document.getElementById(achievement.name)) {
             achievementsList.innerHTML += `<li id="${achievement.name}">${achievement.name}</li>`;
+            document.getElementById("achievementsList").style.display = "block";
         }
     }
 }
@@ -86,12 +87,3 @@ setInterval(function () {
     document.getElementById("totalCoins").innerHTML = coins;
     coinsPerSecond();
 }, 1000);
-
-// } else {
-//     {
-//         Swal.fire({
-//             title: "Oh No",
-//             text: "Not Enough Coins",
-//             icon: "error",
-//         });
-//     }
