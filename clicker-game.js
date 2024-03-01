@@ -3,6 +3,7 @@ let coins = 0;
 function btnCoin() {
     coins++;
     document.getElementById("totalCoins").innerHTML = coins;
+
 }
 
 let autoClick = 0;
@@ -64,7 +65,7 @@ function coinsPerSecond() {
 }
 
 const achievement = {
-    name: "Coin Master Achievement",
+    name: "Master Achievement",
     requirement: 25,
 };
 
