@@ -3,7 +3,6 @@ let coins = 0;
 function btnCoin() {
     coins++;
     document.getElementById("totalCoins").innerHTML = coins;
-
 }
 
 let autoClick = 0;
@@ -63,24 +62,6 @@ function coinsPerSecond() {
     cps = autoClick * 1 + golddigger * 2;
     document.getElementById("cps").innerHTML = cps;
 }
-
-const achievement = {
-    name: "Master Achievement",
-    requirement: 25,
-};
-
-function checkAchievement() {
-    const achievementsList = document.getElementById("achievementsList");
-
-    if (coins >= achievement.requirement) {
-        if (!document.getElementById(achievement.name)) {
-            achievementsList.innerHTML += `<li id="${achievement.name}">${achievement.name}</li>`;
-            document.getElementById("achievementsList").style.display = "block";
-        }
-    }
-}
-
-setInterval(checkAchievement, 3000);
 
 setInterval(function () {
     coins = coins + autoClick * 1 + golddigger * 2;

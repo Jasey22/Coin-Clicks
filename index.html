@@ -13,23 +13,19 @@
     <div class="container">
         <h1>Coin Clicker</h1>
         <div class="info">
-            STATS:
-            <ul>
-                <li>Total Coins: <span id="totalCoins">0</span></li>
-                <li>Auto Clicker: <span id="totalAutoClicker">0</span></li>
-                <li>Gold Diggers: <span id="totalDigger">0</span></li>
-                <li>CoinsPerSecond: <span id="cps">0</span></li>
-            </ul>
+            Total Coins:<span id="totalCoins">0</span>
+            Auto Clicker: <span id="totalAutoClicker">0</span>
+            Gold Diggers: <span id="totalDigger">0</span>
+            CoinsPerSecond: <span id="cps">0</span>
         </div>
 
-
-        <button onclick="btnCoin()" class="main-btn">Add +1 Coin</button>
-        <button onclick="btnAutoClicker()">Autoclicker - $<span id="clickerCost">10</span></button>
-        <button onclick="btnDigger()">Gold Digger - $<span id="diggerCost">20</span></button>
+        <div class="btn">
+            <button onclick="btnCoin()" class="main-btn">Add +1 Coin</button>
+            <button onclick="btnAutoClicker()">Autoclicker - $<span id="clickerCost">10</span></button>
+            <button onclick="btnDigger()">Gold Digger - $<span id="diggerCost">20</span></button>
+        </div>
     </div>
 
-    <div id="achievementsList" class="upgrade" style="display: none;"><img src="coin.gif" alt="">
-    </div>
 
     <script src="clicker-game.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
